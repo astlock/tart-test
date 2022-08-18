@@ -10,9 +10,8 @@ jobs:
   cirrus:
     runs-on: [self-hosted, macOS]
     steps:
-    - uses: actions/checkout@v2
-    - name: Run On macOS
-      uses: rethab/bash-action@v1
-      with:
-        # The command to run. Either "greet" or "error"
-        command: pwd && cirrus run --output github-actions
+     - uses: actions/checkout@v2
+     - run: |
+        pwd
+     - run: cirrus run --output github-actions
+
