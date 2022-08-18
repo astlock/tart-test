@@ -8,7 +8,7 @@ on:
 
 jobs:
   cirrus:
-    runs-on: [self-hosted, macOS, ARM64]
+    runs-on: [self-hosted, macOS]
     steps:
     - uses: actions/checkout@v2
     - uses: cirruslabs/cirrus-action@v2
