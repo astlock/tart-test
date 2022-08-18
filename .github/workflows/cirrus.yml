@@ -15,4 +15,4 @@ jobs:
       uses: rethab/bash-action@v1
       with:
         # The command to run. Either "greet" or "error"
-        command: cirrus run --output github-actions
+        command: pwd && cirrus run --output github-actions
