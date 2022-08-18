@@ -2,7 +2,7 @@ task:
   name: hello
   macos_instance:
     # can be a remote or a local virtual machine
-    image: macos-monterey-base
+    image: ghcr.io/cirruslabs/macos-monterey-base:latest
   hello_script:
     - echo "Hello from within a Tart VM!"
     - echo "Here is my CPU info:"
