@@ -7,4 +7,6 @@ task:
     - echo "Hello from within a Tart VM!"
     - echo "Here is my CPU info:"
     - sysctl -n machdep.cpu.brand_string
+    - echo "Show macOS version"
+    - sw_vers
     - sleep 15
