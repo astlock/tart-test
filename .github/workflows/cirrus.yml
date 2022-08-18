@@ -11,4 +11,8 @@ jobs:
     runs-on: [self-hosted, macOS]
     steps:
     - uses: actions/checkout@v2
-    - uses: cirruslabs/cirrus-action@v2
+    - name: Run On macOS
+      uses: rethab/bash-action@v1
+      with:
+        # The command to run. Either "greet" or "error"
+        command: cirrus run
